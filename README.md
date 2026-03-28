@@ -4,6 +4,8 @@ A clean, responsive portfolio template built with React, Vite, and Tailwind CSS.
 
 Designed for developers, designers, and freelancers who want a professional-looking portfolio without starting from scratch.
 
+🚀 **Full version available here:** [Modern React Portfolio Template](YOUR_GUMROAD_LINK)
+
 ---
 
 ## ✨ Features
