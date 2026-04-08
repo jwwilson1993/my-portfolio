@@ -2,6 +2,9 @@ import projectOne from "../assets/project-1.png";
 import developerPortfolioShot2 from "../assets/project-1(2).png";
 import developerPortfolioShot3 from "../assets/project-1(3).png";
 import projectTwo from "../assets/project-2.png";
+import jobTrackerShot2 from "../assets/project-2(2).png";
+import jobTrackerShot3 from "../assets/project-2(3).png";
+import jobTrackerShot4 from "../assets/project-2(4).png";
 import projectThree from "../assets/project-3.png";
 
 export const portfolioData = {
@@ -66,27 +69,33 @@ export const portfolioData = {
       ],
     },
     {
-      id: "coming-soon",
-      title: "coming soon...",
+      id: "job-tracker-dashboard",
+      title: "HireFlow — Job Application Tracker",
       description:
-        "A conversion-focused page for agencies, startups, or freelancers.",
-      link: "#",
+        "A responsive dashboard to track applications, interviews, and offers with search, filters, stats, and charts.",
+      link: "https://github.com/jwwilson1993/hireflow",
       details:
-        "Designed to drive inquiries with prominent calls to action, concise messaging blocks, and layout patterns optimized for quick scanning.",
-      tags: ["Marketing", "UI Design", "Landing Page"],
+        "Built with React and Vite, HireFlow helps you manage your job search in one place: add and edit applications, search and filter by company, role, or status, and see dashboard stats with Recharts visualizations. Data persists in localStorage, with CSV export, dark/light mode, toasts, and confirmation modals for a polished, production-style UI.",
+      tags: ["React", "Vite", "Recharts", "LocalStorage"],
       image: projectTwo,
       screenshots: [
         {
-          src: "https://via.placeholder.com/800x500?text=Screenshot+1",
-          alt: "Marketing landing page screenshot 1",
+          src: projectTwo,
+          alt: "HireFlow job tracker dashboard overview",
+          caption: "Dashboard with applications and stats",
         },
         {
-          src: "https://via.placeholder.com/800x500?text=Screenshot+2",
-          alt: "Marketing landing page screenshot 2",
+          src: jobTrackerShot2,
+          alt: "HireFlow applications list and filters",
+          caption: "Search, filter, and manage applications",
         },
         {
-          src: "https://via.placeholder.com/800x500?text=Screenshot+3",
-          alt: "Marketing landing page screenshot 3",
+          src: jobTrackerShot3,
+          alt: "HireFlow chart or detail view",
+        },
+        {
+          src: jobTrackerShot4,
+          alt: "HireFlow additional view",
         },
       ],
     },
