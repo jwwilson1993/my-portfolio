@@ -1,19 +1,21 @@
 import projectOne from "../assets/project-1.png";
+import developerPortfolioShot2 from "../assets/project-1(2).png";
+import developerPortfolioShot3 from "../assets/project-1(3).png";
 import projectTwo from "../assets/project-2.png";
 import projectThree from "../assets/project-3.png";
 
 export const portfolioData = {
-  name: "Your Name",
+  name: "Jake Wilson",
   role: "Front-End Developer",
-  status: "Available for freelance work",
-  heroTitle: "I build clean, responsive websites that help brands look sharp.",
+  status: "Available for freelance work or full-time employment",
+  heroTitle: "I Build Responsive Web Apps With Real Functionality",
   heroDescription:
-    "A polished React portfolio template for developers, designers, and freelancers who want a modern online presence without starting from scratch.",
+    "I focus on building web apps that look clean, work smoothly, and solve practical problems using modern front-end tools.",
 
   socialLinks: [
-    { label: "GitHub", url: "#" },
+    { label: "GitHub", url: "https://github.com/jwwilson1993" },
     { label: "LinkedIn", url: "#" },
-    { label: "Email", url: "mailto:hello@example.com" },
+    { label: "Email", url: "#" },
   ],
 
   featuredProject: {
@@ -38,14 +40,30 @@ export const portfolioData = {
   projects: [
     {
       id: "developer-portfolio",
-      title: "Developer Portfolio",
+      title: "Developer Portfolio Template",
       description:
-        "A personal site template with polished sections and a strong hero.",
+        "A polished React portfolio template for developers, designers, and freelancers who want a modern online presence without starting from scratch.",
       link: "#",
       details:
-        "Built with React and Tailwind CSS, this project focuses on smooth section flow, strong visual hierarchy, and mobile-first responsiveness.",
+        "Built with React and Tailwind CSS, this project focuses on smooth section flow, strong visual hierarchy, and mobile-first responsiveness. It's a great starting point for anyone looking to create a professional portfolio website.",
       tags: ["React", "Responsive", "Portfolio"],
       image: projectOne,
+      screenshots: [
+        {
+          src: projectOne,
+          alt: "Developer portfolio template screenshot 1",
+          caption: "Hero section and intro layout",
+        },
+        {
+          src: developerPortfolioShot2,
+          alt: "Developer portfolio template screenshot 2",
+          caption: "Projects grid and card styles",
+        },
+        {
+          src: developerPortfolioShot3,
+          alt: "Developer portfolio template screenshot 3",
+        },
+      ],
     },
     {
       id: "coming-soon",
@@ -57,6 +75,20 @@ export const portfolioData = {
         "Designed to drive inquiries with prominent calls to action, concise messaging blocks, and layout patterns optimized for quick scanning.",
       tags: ["Marketing", "UI Design", "Landing Page"],
       image: projectTwo,
+      screenshots: [
+        {
+          src: "https://via.placeholder.com/800x500?text=Screenshot+1",
+          alt: "Marketing landing page screenshot 1",
+        },
+        {
+          src: "https://via.placeholder.com/800x500?text=Screenshot+2",
+          alt: "Marketing landing page screenshot 2",
+        },
+        {
+          src: "https://via.placeholder.com/800x500?text=Screenshot+3",
+          alt: "Marketing landing page screenshot 3",
+        },
+      ],
     },
     {
       id: "product-showcase",
@@ -68,33 +100,47 @@ export const portfolioData = {
         "Highlights product features with visual storytelling, reusable card components, and a clear path from overview to feature-level detail.",
       tags: ["Product", "Modern UI", "Showcase"],
       image: projectThree,
+      screenshots: [
+        {
+          src: "https://via.placeholder.com/800x500?text=Screenshot+1",
+          alt: "Product showcase screenshot 1",
+        },
+        {
+          src: "https://via.placeholder.com/800x500?text=Screenshot+2",
+          alt: "Product showcase screenshot 2",
+        },
+        {
+          src: "https://via.placeholder.com/800x500?text=Screenshot+3",
+          alt: "Product showcase screenshot 3",
+        },
+      ],
     },
   ],
 
   about: {
     eyebrow: "About",
-    heading: "Built to be easy to customize",
+    heading: "A Little Bit About Me",
     description:
-      "This starter template is structured so users can quickly update text, project cards, links, and branding without digging through a messy codebase.",
+      "I'm a self-taught front-end developer building responsive web apps that look clean, work smoothly, and solve practical problems. I'm currently looking for a full-time position as a front-end developer. I'm available for freelance work as well.",
   },
 
   skills: [
     "React + Vite",
-    "Responsive Layout",
-    "Modern UI",
-    "Simple Editing",
-    "Portfolio Ready",
-    "Fast Setup",
+    "Responsive Design",
+    "Accessibility",
+    "JavaScript",
+    "HTML/CSS",
+    "Git/GitHub",    
   ],
 
   contact: {
     eyebrow: "Contact",
     heading: "Let’s build something great",
     description:
-      "Add your email, LinkedIn, GitHub, and a simple contact form or call-to-action here.",
-    email: "hello@example.com",
+      "I'm currently looking for a full-time position as a front-end developer. I'm available for freelance work as well. Please feel free to contact me via email or LinkedIn.",
+    email: "jwwilson1993@gmail.com",
     githubLabel: "GitHub",
-    githubUrl: "#",
+    githubUrl: "https://github.com/jwwilson1993",
   },
 
   footerText: "Built with React, Vite, and Tailwind CSS.",

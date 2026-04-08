@@ -1,0 +1,202 @@
+/* Root wrapper — optional theme modifier from parent */
+.project-carousel {
+  width: 100%;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-carousel__viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  max-height: 36rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.35);
+}
+
+.project-carousel--light .project-carousel__viewport {
+  background: rgba(148, 163, 184, 0.2);
+}
+
+/* Stacked slides — only the active one fades in */
+.project-carousel__slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-carousel__slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+.project-carousel__slide--active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.project-carousel__slide img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.project-carousel__caption {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #f1f5f9;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.85), transparent);
+}
+
+.project-carousel--light .project-carousel__caption {
+  color: #0f172a;
+  background: linear-gradient(to top, rgba(241, 245, 249, 0.95), transparent);
+}
+
+/* Desktop: [ Prev ] [ ···dots··· ] [ Next ] */
+.project-carousel__controls {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.project-carousel__arrow--prev {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.project-carousel__dots {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.project-carousel__arrow--next {
+  grid-column: 3;
+  justify-self: end;
+}
+
+.project-carousel__arrow {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  background: rgba(34, 211, 238, 0.12);
+  color: #67e8f9;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-carousel__arrow:hover:not(:disabled) {
+  background: rgba(34, 211, 238, 0.22);
+  border-color: rgba(34, 211, 238, 0.55);
+}
+
+.project-carousel__arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.project-carousel--light .project-carousel__arrow {
+  border-color: rgba(14, 116, 144, 0.35);
+  background: rgba(14, 116, 144, 0.12);
+  color: #0e7490;
+}
+
+.project-carousel--light .project-carousel__arrow:hover:not(:disabled) {
+  background: rgba(14, 116, 144, 0.2);
+  border-color: rgba(14, 116, 144, 0.5);
+}
+
+.project-carousel__dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  padding: 0;
+  border: none;
+  border-radius: 9999px;
+  background: rgba(148, 163, 184, 0.45);
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.project-carousel__dot:hover {
+  background: rgba(34, 211, 238, 0.55);
+  transform: scale(1.12);
+}
+
+.project-carousel__dot--active {
+  background: #22d3ee;
+  transform: scale(1.15);
+}
+
+.project-carousel--light .project-carousel__dot {
+  background: rgba(71, 85, 105, 0.35);
+}
+
+.project-carousel--light .project-carousel__dot:hover {
+  background: rgba(14, 116, 144, 0.6);
+}
+
+.project-carousel--light .project-carousel__dot--active {
+  background: #0e7490;
+}
+
+@media (max-width: 640px) {
+  .project-carousel__viewport {
+    aspect-ratio: 4 / 3;
+    max-height: 22rem;
+    border-radius: 0.75rem;
+  }
+
+  .project-carousel__controls {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .project-carousel__dots {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .project-carousel__arrow--prev {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: stretch;
+    text-align: center;
+  }
+
+  .project-carousel__arrow--next {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: stretch;
+    text-align: center;
+  }
+}
