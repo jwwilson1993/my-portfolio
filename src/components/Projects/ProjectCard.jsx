@@ -1,4 +1,5 @@
 import Card from "../ui/Card/Card";
+import { Link } from "react-router";
 
 export default function ProjectCard({ isDark, project }) {
   return (
@@ -43,8 +44,8 @@ export default function ProjectCard({ isDark, project }) {
         ))}
       </div>
 
-      <a
-        href={project.link}
+      <Link
+        to={`/projects/${project.id}`}
         className={
           isDark
             ? "mt-5 inline-block text-sm font-medium text-cyan-300 transition hover:text-cyan-200"
@@ -52,7 +53,7 @@ export default function ProjectCard({ isDark, project }) {
         }
       >
         View Details →
-      </a>
+      </Link>
     </Card>
   );
 }

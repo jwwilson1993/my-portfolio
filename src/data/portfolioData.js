@@ -37,26 +37,35 @@ export const portfolioData = {
 
   projects: [
     {
+      id: "developer-portfolio",
       title: "Developer Portfolio",
       description:
         "A personal site template with polished sections and a strong hero.",
       link: "#",
+      details:
+        "Built with React and Tailwind CSS, this project focuses on smooth section flow, strong visual hierarchy, and mobile-first responsiveness.",
       tags: ["React", "Responsive", "Portfolio"],
       image: projectOne,
     },
     {
+      id: "coming-soon",
       title: "coming soon...",
       description:
         "A conversion-focused page for agencies, startups, or freelancers.",
       link: "#",
+      details:
+        "Designed to drive inquiries with prominent calls to action, concise messaging blocks, and layout patterns optimized for quick scanning.",
       tags: ["Marketing", "UI Design", "Landing Page"],
       image: projectTwo,
     },
     {
+      id: "product-showcase",
       title: "Product Showcase",
       description:
         "A stylish presentation page for apps, tools, or digital products.",
       link: "#",
+      details:
+        "Highlights product features with visual storytelling, reusable card components, and a clear path from overview to feature-level detail.",
       tags: ["Product", "Modern UI", "Showcase"],
       image: projectThree,
     },

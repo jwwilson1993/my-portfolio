@@ -31,7 +31,7 @@ export default function Projects({ isDark, data }) {
 
       <div className="grid gap-6 md:grid-cols-3">
         {projects.map((project) => (
-          <ProjectCard key={project.title} isDark={isDark} project={project} />
+          <ProjectCard key={project.id} isDark={isDark} project={project} />
         ))}
       </div>
     </Section>
