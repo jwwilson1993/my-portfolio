@@ -45,7 +45,7 @@ export const portfolioData = {
       image: projectOne,
     },
     {
-      title: "Business Landing Page",
+      title: "coming soon...",
       description:
         "A conversion-focused page for agencies, startups, or freelancers.",
       link: "#",
