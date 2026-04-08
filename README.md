@@ -1,127 +1,151 @@
-# 🚀 Modern React Portfolio Template
+# 🚀 Developer Portfolio Template
 
-A clean, responsive portfolio template built with React, Vite, and Tailwind CSS.
+A modern, responsive portfolio built with React and Tailwind CSS, designed to showcase projects, skills, and contact information in a clean and professional way.
 
-Designed for developers, designers, and freelancers who want a professional-looking portfolio without starting from scratch.
+This project focuses on **component architecture, reusability, and scalability**, while maintaining a polished UI and smooth user experience.
 
-🚀 **Full version available here:** [Modern React Portfolio Template](YOUR_GUMROAD_LINK)
+---
+
+## 🔗 Live Demo
+
+👉 [View Live Site](#)
+👉 [View Source Code](#)
 
 ---
 
 ## ✨ Features
 
-* ⚛️ Built with React + Vite
-* 🎨 Styled with Tailwind CSS
-* 🌙 Dark / Light mode toggle (with saved preference)
-* 📱 Fully responsive design
-* 🧠 Easy-to-edit data file (no digging through components)
-* 🖼️ Project image support
-* 🔗 Social links + contact section
-* ⚡ Fast and lightweight
+* Responsive design across desktop and mobile
+* Dark / Light mode toggle with persistence
+* Smooth scrolling navigation
+* Modular component architecture
+* Reusable UI components (Button, Card, Section)
+* Dynamic project rendering from data
+* Subtle animations and hover effects
 
 ---
 
-## 📦 Getting Started
+## 🧩 Architecture
 
-### 1. Clone the repo
+This project was refactored from a single large component into a **modular, component-based structure**.
 
-git clone https://github.com/YOUR_USERNAME/portfolio-template.git
-cd portfolio-template
+```
+src/
+  components/
+    Navbar/
+    Hero/
+    HeroCard/
+    Projects/
+      ProjectCard.jsx
+    About/
+    Contact/
+    Footer/
+    ui/
+      Button/
+      Card/
+      Section/
+```
 
-### 2. Install dependencies
+### Key Concepts
 
+* **Separation of concerns** → each section is its own component
+* **Reusable UI layer** → shared components for consistency
+* **Data-driven rendering** → content powered by a central data file
+* **Scalable structure** → easy to extend with new features
+
+---
+
+## ⚙️ Tech Stack
+
+* **React** – component-based UI architecture
+* **Vite** – fast development environment
+* **Tailwind CSS** – utility-first styling
+* **JavaScript (ES6+)**
+
+---
+
+## 🧠 Technical Decisions
+
+### Component-Based Design
+
+The application is structured into small, focused components instead of a single large file. This improves readability, maintainability, and scalability.
+
+### Reusable UI Components
+
+Custom UI components like `Button`, `Card`, and `Section` reduce duplication and keep styling consistent across the app.
+
+### Tailwind CSS
+
+Tailwind was used to rapidly build a modern UI while maintaining responsive design and consistent spacing, layout, and typography.
+
+### Theme Persistence
+
+Dark/light mode is stored in `localStorage` to preserve user preference across sessions.
+
+---
+
+## 🔄 Recent Improvements
+
+* Refactored `App.jsx` into multiple components
+* Introduced reusable UI components
+* Created `ProjectCard` for cleaner project rendering
+* Improved layout consistency using shared wrappers
+* Added smooth scrolling and subtle animations
+* Cleaned up prop passing using structured data objects
+
+---
+
+## 📸 Screenshots
+
+*(Add desktop + mobile screenshots here)*
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/your-repo.git
+
+# Navigate into the project
+cd your-repo
+
+# Install dependencies
 npm install
 
-### 3. Run the development server
-
+# Start development server
 npm run dev
-
-Then open:
-http://localhost:5173/
+```
 
 ---
 
-## 🛠️ Customization
+## 📌 Future Improvements
 
-All content is controlled in one file:
-
-src/data/portfolioData.js
-
-You can easily update:
-
-* Name and role
-* Hero text
-* Projects
-* Skills
-* Social links
-* Contact info
-
-No need to edit the main components.
+* Add project filtering / categories
+* Add animations with Framer Motion
+* Integrate contact form with backend (Firebase or API)
+* Add CMS or dynamic content management
 
 ---
 
-## 🖼️ Adding Project Images
+## 💡 What I Learned
 
-1. Add your images to:
-
-src/assets/
-
-2. Import them in `portfolioData.js`:
-
-import projectOne from "../assets/project-1.jpg";
-
-3. Assign them to your projects:
-
-image: projectOne
+* How to refactor a large component into a scalable architecture
+* How to design reusable UI systems
+* How to structure a real-world React project
+* How to balance development speed with maintainability
 
 ---
 
-## 🌙 Theme Toggle
+## 📬 Contact
 
-* Click the toggle in the top right
-* Your preference is saved automatically
-* Works across refreshes using localStorage
+If you’d like to collaborate or have any opportunities:
 
----
-
-## 🚀 Deployment
-
-You can deploy this easily using Netlify:
-
-* Build command: npm run build
-* Publish directory: dist
+* GitHub: [Your GitHub](#)
+* Email: [your@email.com](mailto:your@email.com)
 
 ---
 
-## 📁 Tech Stack
+## 📝 License
 
-* React
-* Vite
-* Tailwind CSS
-
----
-
-## 📄 License
-
-This project is open for personal and commercial use.
-
----
-
-## 💡 Future Improvements
-
-* Multiple layout options
-* Animations (Framer Motion)
-* Blog section
-* CMS integration
-
----
-
-## 🙌 Author
-
-Built by Jake
-
----
-
-## ⭐ If you like this
-
-Feel free to star the repo or use it for your own portfolio!
+This project is open source and available under the MIT License.
