@@ -100,14 +100,14 @@ export const portfolioData = {
       ],
     },
     {
-      id: "product-showcase",
-      title: "Product Showcase",
+      id: "coming-soon",
+      title: "coming soon...",
       description:
-        "A stylish presentation page for apps, tools, or digital products.",
+        "coming soon...",
       link: "#",
       details:
-        "Highlights product features with visual storytelling, reusable card components, and a clear path from overview to feature-level detail.",
-      tags: ["Product", "Modern UI", "Showcase"],
+        "coming soon...",
+      tags: ["coming soon..."],
       image: projectThree,
       screenshots: [
         {
