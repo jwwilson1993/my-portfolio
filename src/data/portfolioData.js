@@ -21,11 +21,22 @@ export const portfolioData = {
     { label: "Email", url: "#" },
   ],
 
-  featuredProject: {
-    label: "Featured project",
-    title: "Creative Studio Landing Page",
-    description:
-      "Responsive marketing site with clean sections, strong typography, and clear calls to action.",
+  heroCard: {
+    heading: "Jake Wilson",
+    intro:
+      "I'm a front-end developer focused on building responsive, modern web applications with React, clean UI, and real functionality.",
+    skillsHeading: "Core skills",
+    skills: [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Responsive Design",
+      "Git",
+      "GitHub",
+      "API Integration",
+      "Vite",
+    ],
   },
 
   stats: [
@@ -35,9 +46,9 @@ export const portfolioData = {
 
   projectsIntro: {
     eyebrow: "Projects",
-    heading: "Selected work",
+    heading: "Selected Work",
     description:
-      "Swap these cards with your own projects and links. The layout is built to look good fast.",
+      "These are some of the projects I've worked on. More coming soon...",
   },
 
   projects: [
