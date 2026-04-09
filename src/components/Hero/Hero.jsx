@@ -41,19 +41,25 @@ export default function Hero({ isDark, data }) {
       </div>
 
       <div className="flex flex-wrap gap-3 pt-2">
-        {socialLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.url}
-            className={
-              isDark
-                ? "rounded-full border border-white/10 px-4 py-2 text-sm text-slate-300 transition hover:border-cyan-400/40 hover:text-white"
-                : "rounded-full border border-slate-300 px-4 py-2 text-sm text-slate-700 transition hover:border-cyan-500/40 hover:text-slate-950"
-            }
-          >
-            {link.label}
-          </a>
-        ))}
+        {socialLinks.map((link) => {
+          const isGitHubLink = link.url.includes("github.com");
+
+          return (
+            <a
+              key={link.label}
+              href={link.url}
+              target={isGitHubLink ? "_blank" : undefined}
+              rel={isGitHubLink ? "noopener noreferrer" : undefined}
+              className={
+                isDark
+                  ? "rounded-full border border-white/10 px-4 py-2 text-sm text-slate-300 transition hover:border-cyan-400/40 hover:text-white"
+                  : "rounded-full border border-slate-300 px-4 py-2 text-sm text-slate-700 transition hover:border-cyan-500/40 hover:text-slate-950"
+              }
+            >
+              {link.label}
+            </a>
+          );
+        })}
       </div>
     </div>
   );

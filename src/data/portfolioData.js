@@ -6,6 +6,8 @@ import jobTrackerShot2 from "../assets/project-2(2).png";
 import jobTrackerShot3 from "../assets/project-2(3).png";
 import jobTrackerShot4 from "../assets/project-2(4).png";
 import projectThree from "../assets/project-3.png";
+import devDashShot2 from "../assets/project-3(2).png";
+import devDashShot3 from "../assets/project-3(3).png";
 
 export const portfolioData = {
   name: "Jake Wilson",
@@ -111,27 +113,29 @@ export const portfolioData = {
       ],
     },
     {
-      id: "coming-soon",
-      title: "coming soon...",
+      id: "devdash-ai",
+      title: "DevDash AI",
       description:
-        "coming soon...",
-      link: "#",
+        "A modern developer dashboard that combines live job data, GitHub profile insights, and AI recommendations.",
+      link: "https://github.com/jwwilson1993/devdash-ai",
       details:
-        "coming soon...",
-      tags: ["coming soon..."],
+        "Built with React and Vite, DevDash AI helps developers search remote jobs, analyze GitHub activity, save listings with localStorage, and generate tailored skill and career suggestions through OpenRouter AI. It demonstrates multi-API integration, async data handling, and responsive UI design.",
+      tags: ["React", "Vite", "GitHub API", "Remotive API", "OpenRouter"],
       image: projectThree,
       screenshots: [
         {
-          src: "https://via.placeholder.com/800x500?text=Screenshot+1",
-          alt: "Product showcase screenshot 1",
+          src: projectThree,
+          alt: "DevDash AI dashboard overview",
+          caption: "Unified dashboard with jobs, GitHub insights, and AI panel",
         },
         {
-          src: "https://via.placeholder.com/800x500?text=Screenshot+2",
-          alt: "Product showcase screenshot 2",
+          src: devDashShot2,
+          alt: "DevDash AI job search panel",
+          caption: "Search remote developer roles and save opportunities",
         },
         {
-          src: "https://via.placeholder.com/800x500?text=Screenshot+3",
-          alt: "Product showcase screenshot 3",
+          src: devDashShot3,
+          alt: "DevDash AI GitHub and recommendations view",
         },
       ],
     },
