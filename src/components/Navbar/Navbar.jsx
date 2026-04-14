@@ -1,4 +1,4 @@
-import Button from "../ui/Button/Button";
+import ThemeToggle from "../ui/ThemeToggle/ThemeToggle";
 
 export default function Navbar({ isDark, toggleTheme, name, role }) {
   return (
@@ -36,9 +36,7 @@ export default function Navbar({ isDark, toggleTheme, name, role }) {
             </a>
           </nav>
 
-          <Button isDark={isDark} onClick={toggleTheme} variant="ghost">
-            {isDark ? "Light Mode" : "Dark Mode"}
-          </Button>
+          <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
         </div>
       </div>
     </header>
