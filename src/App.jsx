@@ -14,9 +14,9 @@ import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 function HomePage({ isDark, data }) {
   return (
     <main>
-      <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
-        <Hero isDark={isDark} data={data} />
+      <section className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 py-20">
         <HeroCard isDark={isDark} data={data} />
+        <Hero isDark={isDark} githubUrl={data.contact.githubUrl} />
       </section>
 
       <Projects isDark={isDark} data={data} />

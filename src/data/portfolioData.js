@@ -20,7 +20,7 @@ export const portfolioData = {
   socialLinks: [
     { label: "GitHub", url: "https://github.com/jwwilson1993" },
     { label: "LinkedIn", url: "#" },
-    { label: "Email", url: "#" },
+    { label: "Email", url: "mailto:jwwilson.dev@gmail.com" },
   ],
 
   heroCard: {
@@ -40,11 +40,6 @@ export const portfolioData = {
       "Vite",
     ],
   },
-
-  stats: [
-    { value: "3+", label: "Highlighted projects" },
-    { value: "100%", label: "Mobile responsive" },
-  ],
 
   projectsIntro: {
     eyebrow: "Projects",
@@ -162,7 +157,7 @@ export const portfolioData = {
     heading: "Let’s build something great",
     description:
       "I'm currently looking for a full-time position as a front-end developer. I'm available for freelance work as well. Please feel free to contact me via email or LinkedIn.",
-    email: "jwwilson1993@gmail.com",
+    email: "jwwilson.dev@gmail.com",
     githubLabel: "GitHub",
     githubUrl: "https://github.com/jwwilson1993",
   },

@@ -26,14 +26,15 @@ export default function Button({
   const combinedClassName = `${baseStyles} ${variants[variant]} ${className}`;
 
   if (href) {
-    const isGitHubLink = href.includes("github.com");
+    const openInNewTab =
+      href.startsWith("http://") || href.startsWith("https://");
 
     return (
       <a
         href={href}
         className={combinedClassName}
-        target={isGitHubLink ? "_blank" : undefined}
-        rel={isGitHubLink ? "noopener noreferrer" : undefined}
+        target={openInNewTab ? "_blank" : undefined}
+        rel={openInNewTab ? "noopener noreferrer" : undefined}
       >
         {children}
       </a>
