@@ -17,12 +17,6 @@ export const portfolioData = {
   heroDescription:
     "I focus on building web apps that look clean, work smoothly, and solve practical problems using modern front-end tools.",
 
-  socialLinks: [
-    { label: "GitHub", url: "https://github.com/jwwilson1993" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/jake-wilson93" },
-    { label: "Email", url: "mailto:jwwilson.dev@gmail.com" },
-  ],
-
   heroCard: {
     heading: "Jake Wilson",
     intro:
@@ -149,7 +143,7 @@ export const portfolioData = {
     "Accessibility",
     "JavaScript",
     "HTML/CSS",
-    "Git/GitHub",    
+    "Git/GitHub",
   ],
 
   contact: {

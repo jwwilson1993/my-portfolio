@@ -6,14 +6,7 @@ export default function About({ isDark, data }) {
 
   return (
     <Section id="about" className="py-12">
-      <Card
-        isDark={isDark}
-        className={
-          isDark
-            ? "grid gap-8 p-8 md:grid-cols-[1.1fr_0.9fr]"
-            : "grid gap-8 p-8 md:grid-cols-[1.1fr_0.9fr]"
-        }
-      >
+      <Card isDark={isDark} className="grid gap-8 p-8 md:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p
             className={

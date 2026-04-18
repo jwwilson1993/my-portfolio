@@ -31,9 +31,7 @@ function HomePage({ isDark, data }) {
 }
 
 export default function App() {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "dark";
-  });
+  const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
