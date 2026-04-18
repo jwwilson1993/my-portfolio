@@ -16,7 +16,11 @@ function HomePage({ isDark, data }) {
     <main>
       <section className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 py-20">
         <HeroCard isDark={isDark} data={data} />
-        <Hero isDark={isDark} githubUrl={data.contact.githubUrl} />
+        <Hero
+          isDark={isDark}
+          githubUrl={data.contact.githubUrl}
+          linkedInUrl={data.contact.linkedInUrl}
+        />
       </section>
 
       <Projects isDark={isDark} data={data} />

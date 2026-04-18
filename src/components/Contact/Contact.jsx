@@ -1,5 +1,10 @@
 import Section from "../ui/Section/Section";
 import Button from "../ui/Button/Button";
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  socialButtonIconClass,
+} from "../ui/SocialBrandIcons";
 
 export default function Contact({ isDark, data }) {
   const { contact } = data;
@@ -33,13 +38,29 @@ export default function Contact({ isDark, data }) {
           {contact.description}
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-4">
-          <Button href={`mailto:${contact.email}`} isDark={isDark} variant="primary">
+        <div className="mt-6 flex flex-wrap items-center gap-4">
+          <span
+            className={
+              isDark
+                ? "text-base font-medium text-cyan-200"
+                : "text-base font-medium text-cyan-950"
+            }
+          >
             {contact.email}
-          </Button>
+          </span>
 
           <Button href={contact.githubUrl} isDark={isDark} variant="secondary">
-            {contact.githubLabel}
+            <span className="inline-flex items-center gap-2">
+              <GitHubIcon className={socialButtonIconClass} />
+              {contact.githubLabel}
+            </span>
+          </Button>
+
+          <Button href={contact.linkedInUrl} isDark={isDark} variant="secondary">
+            <span className="inline-flex items-center gap-2">
+              <LinkedInIcon className={socialButtonIconClass} />
+              {contact.linkedInLabel}
+            </span>
           </Button>
         </div>
       </div>

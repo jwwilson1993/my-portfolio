@@ -19,7 +19,7 @@ export const portfolioData = {
 
   socialLinks: [
     { label: "GitHub", url: "https://github.com/jwwilson1993" },
-    { label: "LinkedIn", url: "#" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/jake-wilson93" },
     { label: "Email", url: "mailto:jwwilson.dev@gmail.com" },
   ],
 
@@ -160,6 +160,8 @@ export const portfolioData = {
     email: "jwwilson.dev@gmail.com",
     githubLabel: "GitHub",
     githubUrl: "https://github.com/jwwilson1993",
+    linkedInLabel: "LinkedIn",
+    linkedInUrl: "https://www.linkedin.com/in/jake-wilson93",
   },
 
   footerText: "Built with React, Vite, and Tailwind CSS.",
